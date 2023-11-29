@@ -5,19 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DCC202 - Atividade 12: Wendel Guilherme</title>
     <script src="main.js" type="module" ></script>
+    <style>
+        input::invalid{
+            border: 1px solid red;
+            color: red;
+    </style>
 </head>
 <body>
     <main>
         <h1>DCC202 - Atividade 12: Wendel Guilherme</h1>
         <p>Esta é a página principal que usa JavaScript para adicionar iteração.</p>
+        
         <section>
-            <form name="entrada">
-                <input name="quantidade">
-                <input name="fruta">
-                <input type="submit" name="enviar">
+            <form name="entrada" id="entrada">
+                <fieldset> 
+                    <legend>Origem</legend>
+                    <label>
+                        <input type="radio" name="origem" value="pomar" >
+                        Pomar
+                    </label>
+                    <label>
+                        <input type="radio" name="origem" value="joao" checked>
+                        João
+                    </label>
+                    <label>
+                        <input type="radio" name="origem" value="maria" >
+                        Maria
+                    </label>
+                </fieldset>
+                            <input type="number" value="5" min="0" max="12">
+                <select name="fruta">
+                    <option value="maca">Maçã</option>
+                    <option value="pera">Pera</option>
+                    <option value="banana">Banana</option>
+                </select>
+                <button type="submit" name="enviar">Enviar</button>
+
+                <fieldset> <legend>Destino</legend>
+                <label>
+                    <input type="radio" name="destino" value="pomar" >
+                Pomar</label>
+                <label>
+                    <input type="radio" name="destino" value="joao" checked>
+                João</label>
+                <label>
+                    <input type="radio" name="destino" value="maria" >
+                Maria</label>
             </form>
+
         </section>
-        <section></section>
+        
     </main>
 </body>
 </html>
